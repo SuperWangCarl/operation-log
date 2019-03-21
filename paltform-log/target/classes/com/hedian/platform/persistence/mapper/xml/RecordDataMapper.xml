@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.hedian.platform.persistence.mapper.RecordDataMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.hedian.platform.persistence.po.RecordData">
+        <id column="log_data_id" property="logDataId" />
+        <result column="operation_name" property="operationName" />
+        <result column="operation_id" property="operationId" />
+        <result column="ip_address" property="ipAddress" />
+        <result column="request_path" property="requestPath" />
+        <result column="request_location" property="requestLocation" />
+        <result column="request_zh" property="requestZh" />
+        <result column="request_package" property="requestPackage" />
+        <result column="request_param_en" property="requestParamEn" />
+        <result column="request_param_zh" property="requestParamZh" />
+        <result column="response_param_en" property="responseParamEn" />
+        <result column="response_param_zh" property="responseParamZh" />
+        <result column="request_way" property="requestWay" />
+        <result column="request_type" property="requestType" />
+        <result column="create_user_id" property="createUserId" />
+        <result column="modify_user_id" property="modifyUserId" />
+        <result column="create_time" property="createTime" />
+        <result column="modify_time" property="modifyTime" />
+        <result column="comment" property="comment" />
+        <result column="del_flag" property="delFlag" />
+        <result column="use_flag" property="useFlag" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        log_data_id, operation_name, operation_id, ip_address, request_path, request_location, request_zh, request_package, request_param_en, request_param_zh, response_param_en, response_param_zh, request_way, request_type, create_user_id, modify_user_id, create_time, modify_time, comment, del_flag, use_flag
+    </sql>
+
+</mapper>
